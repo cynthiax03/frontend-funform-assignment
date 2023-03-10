@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <title>Dynamic form</title>
+        <style>
+            table, td {
+                border: solid 0.5px black;
+            }
+
+            th {
+                border: solid 0.5px black;
+                font-weight: normal;
+                text-align: left;
+            }
+
+        </style>
+    </head>
+    <body>
+    <form name="buildingInfo">
+        <table>
+                <tr>
+                    <th>Street Name</th>
+                    <td><input type="text" id="streetName"><br></td>
+                </tr>
+
+                <tr>
+                    <th>Suburb</th>
+                    <td><input type="text" id="suburb"><br></td>
+                </tr>
+
+                <tr>
+                    <th>Postcode</th>
+                    <td><input type="text" id="postcode"><br></td>
+                </tr>
+
+                <tr>
+                    <th>Date of Birth</th>
+                    <td><input type="text" id="dob"><br></td>
+                </tr>
+
+                <tr>
+                    <th>Building Type</th>
+                    <td>
+                        <select id="buildingType">
+                        <option value="Apartment">Apartment</option>
+                        <option value="House">House</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>Features</th>
+                    <td>
+                        <input type="checkbox" name="features" id="feature1" value="Heating">Heating<br>
+                        <input type="checkbox" name="features" id="feature2" value="AirConditioning">AirConditioning<br>
+                        <input type="checkbox" name="features" id="feature3" value="Pool">Pool<br>
+                        <input type="checkbox" name="features" id="feature4" value="Sandpit">Sandpit<br>
+                        <button type="button" id = "selectAllButton">Select All</button>
+                    </td>
+                </tr>
+            </table>
+            
+            <br><button type="reset" id="resetButton">Reset</button><br>
+            <br><textarea readonly id= "textArea" rows="5" cols="29"></textarea>
+        </form>
+        <script src="index.js"></script>
+    </body>
+</html>
